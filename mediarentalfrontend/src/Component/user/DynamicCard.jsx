@@ -2,7 +2,7 @@ import React from 'react'
 
 const DynamicCard = (props) => {
     const cardStyle = {
-        width: props.width || '18rem', // Customizable width with default value
+        width: props.width || '14rem', // Customizable width with default value
         margin: '10px',
         ...props.style  // Merge custom styles from props
       };
@@ -10,7 +10,7 @@ const DynamicCard = (props) => {
     <div>
       <div className="card" style={cardStyle}>
         {/* Image */}
-        {props.img && <img src={props.img} className="card-img-top"  style={{width: "18rem", height:"18rem", overflow:'hidden'}} alt={props.alt || 'Card image'} />}
+        {props.img && <img src={props.img} className="card-img-top"  style={{width: "14rem", height:"12rem", overflow:'hidden'}} alt={props.alt || 'Card image'} />}
 
         <div className="card-body">
           {/* Location Title */}
@@ -33,7 +33,7 @@ const DynamicCard = (props) => {
 
           {/* Book Now Button */}
           {props.footer && (
-            <a href={props.link || '#'} className="btn btn-primary w-100">
+            <a href={props.link || '#'} className="btn btn-primary  w-100">
               {props.footer || 'Book Now'}
             </a>
           )}

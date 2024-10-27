@@ -8,9 +8,9 @@ export const saveMedia=(media)=>{
 };
 
 //getById
-export const getMedia=(mediaId)=>{
+export const getMediaById=(mediaId)=>{ 
     return privateAxios
-    .post('/media/'+mediaId)
+    .get('/media/'+mediaId)
     .then((response)=> response.data);
 };
 

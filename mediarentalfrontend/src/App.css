@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
 .hero {
     background-image: url('https://source.unsplash.com/1600x900/?travel');

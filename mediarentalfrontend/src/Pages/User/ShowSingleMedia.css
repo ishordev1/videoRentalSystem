@@ -1,0 +1,43 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.media-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.media-details {
+    width: 50%;
+    padding: 10px;
+}
+
+.media-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.media-player {
+    width: 50%;
+    padding: 10px;
+}
+
+.video-container {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .media-body {
+        flex-direction: column;
+    }
+
+    .media-details, .media-player {
+        width: 100%;
+    }
+}

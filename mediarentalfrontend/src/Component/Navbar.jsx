@@ -61,6 +61,15 @@ const Navbar = () => {
                       <li className="nav-item">
                         <NavLink className="nav-link" aria-current="page" to={`/${role}/home`}>Home</NavLink>
                       </li>
+                      <li className="nav-item">
+                        <NavLink className="nav-link" aria-current="page" to={`/${role}/media`}>Media</NavLink>
+                      </li>
+                      <li className="nav-item">
+                        <NavLink className="nav-link" aria-current="page" to={`/${role}/game`}>Game</NavLink>
+                      </li>
+                      <li className="nav-item">
+                        <NavLink className="nav-link" aria-current="page" to={`/${role}/dashboard`}>Dashboard</NavLink>
+                      </li>
 
                     </>
                   )
@@ -69,8 +78,14 @@ const Navbar = () => {
                   login && isAdmin && role === "admin" && (
                     <>
                       <li className="nav-item">
-                        <NavLink className="nav-link" aria-current="page" to={`/${role}/home`}>Home</NavLink>
+                        <NavLink className="nav-link" aria-current="page" to={`/${role}/home/dashboard`}>Home</NavLink>
                   
+                      </li>
+                      <li className="nav-item">
+                      <NavLink className="nav-link" aria-current="page" to="/admin/about"> <i class="fa-solid fa-car mx-2"></i>about</NavLink>
+                      </li>
+                      <li className="nav-item">
+                      <NavLink className="nav-link" aria-current="page" to="/admin/contact"> <i class="fa-solid fa-car mx-2"></i>about</NavLink>
                       </li>
                     </>
                   )
